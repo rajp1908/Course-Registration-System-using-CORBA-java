@@ -1,0 +1,16 @@
+module DCRS{
+	
+	interface computeTaskInterface{
+		string swapCourse(in string studentID,in string newCourseID,in string oldCourseID);
+		string addCourse(in string courseID,in string sem);
+		string removeCourse(in string courseID,in string sem);
+		string listCourseAvailability(in string sem);
+		string enrollCourse(in string studentID,in string courseID,in string sem);
+		string getClassSchedule(in string studentID);
+		string dropCourse(in string studentID,in string courseID);
+		string check(in string id,in char c);
+		void setClient(in string id);
+		string getClient();
+		void setCapacity(in long i);
+	};
+};
